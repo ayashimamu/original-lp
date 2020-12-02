@@ -220,49 +220,36 @@ h1, p{
 }
 .things{
   display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 300px;
 }
-.thingsfood{
-  width: 250px;
-  height: 250px;
+.thingscard{
+  border: solid 0.5px;
+  border-right: none;
+  width: 100%;
+  border-color: gray;
+}
+.card-img{
+  width: 100%;
+  height: 100%;
   position: relative;
-  background-image: url("../img/2615381_s.jpg");
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
+}
+.thingsfood{
+  background-image: url("../img/2615381_s.jpg");
 }
 .thingswear{
-  width: 250px;
-  height: 250px;
-  position: relative;
   background-image: url("../img/images.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .thingsuse{
-  width: 250px;
-  height: 250px;
-  position: relative;
   background-image: url("../img/20171214_0_01.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .thingsfeel{
-  width: 250px;
-  height: 250px;
-  position: relative;
   background-image: url("../img/61i3tLBZtsL._AC_SX522_.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .thingsmake{
-  width: 250px;
-  height: 250px;
-  position: relative;
   background-image: url("../img/PAK13_inakanotanbo20130812_TP_V4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .icontext{
@@ -274,5 +261,35 @@ h1, p{
   transform: translate(-50%, -50%);
 }
 .thingsbottom{
+  background-color: white;
   position: relative;
+  height: 100px;
+  border: solid 0.5px;
+  border-color: gray;
+  border-right: none;
+}
+.thingstitle{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 8px;
+}
+.thingsname{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.calender{
+  position: relative;
+   background-color:#f8f8f8;
+}
+.calender img{
+  width: 60%;
 }
