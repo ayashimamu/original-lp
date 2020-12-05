@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
 
 /*
 html5doctor.com Reset Stylesheet
@@ -106,12 +107,11 @@ h1, p{
  color:#686868 ;
 }
 .navigation-box{
-  margin-top: 60px;
-  margin-right: 50%;
-  margin-left: 50%;
+  margin-right: 45%;
+  margin-left: 45%;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 150px;
+  width:150px;
   border: solid 1px;
   display:flex;
   justify-content: center;
@@ -173,6 +173,9 @@ h1, p{
   text-decoration: none;
   color: #696969;
 }
+.concept{
+  padding-top: 60px;
+}
 .concept-content{
   margin-left: 25%;
   margin-right: 25%;
@@ -221,7 +224,6 @@ h1, p{
 .things{
   display: flex;
   width: 100%;
-  height: 300px;
 }
 .thingscard{
   border: solid 0.5px;
@@ -232,6 +234,7 @@ h1, p{
 .card-img{
   width: 100%;
   height: 100%;
+  height: 300px;
   position: relative;
   background-size:cover;
   background-repeat: no-repeat;
@@ -288,8 +291,110 @@ h1, p{
 }
 .calender{
   position: relative;
-   background-color:#f8f8f8;
+  background-color:#f8f8f8;
+   padding-top: 60px;
+   height: 700px;
+   padding-bottom: 60px;
 }
 .calender img{
   width: 60%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+.news{
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.news-buttons{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.news-button{
+  padding: 15px 50px;
+  font-size: 10px;
+  color: gray;
+  background-color: #fff;
+  border: solid 1px #696969;
+  outline: none;
+}
+.news-button:hover{
+  color: #d3d3d3;
+  border-color: #d3d3d3;
+}
+.news-button:active{
+  background-color: #4F4D4c ;
+  outline: none;
+  border-color: #696969;
+}
+.cafe-news{
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 250px 40px 250px;
+}
+.cafe-menu{
+  width: 250px;
+  height: 400px;
+}
+.cafe-menu img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: solid gray 1px;
+}
+.cafe-menu h1{
+  font-family: Arial;
+  font-weight: 300;
+  padding-top: 15px;
+}
+.cafe-menu p{
+  font-family: Arial;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding-top: 10px;
+}
+.more{
+  display: flex;
+  justify-content: center;
+}
+.more button{
+  width: 120px;
+  height: 50px;
+  background-color: #4f4d4c;
+  outline: none;
+  color:#d3d3d3;
+ font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  border: solid 0.5px #000;
+}
+.more button:hover{
+  background-color: #fff ;
+}
+.event-report{
+  padding-top: 40px;
+  background-color: #f8f8f8;
+
+}
+.report{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+.contents{
+  width: 30%;
+}
+.report th img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.report td p{
+  font-size: 15px;
+}
+
