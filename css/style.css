@@ -106,9 +106,16 @@ h1, p{
  font-family: serif;
  color:#686868 ;
 }
+.navigation{
+  height: 100px;
+  position: relative;
+
+}
 .navigation-box{
-  margin-right: 45%;
-  margin-left: 45%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   padding-top: 10px;
   padding-bottom: 10px;
   width:150px;
@@ -116,15 +123,10 @@ h1, p{
   display:flex;
   justify-content: center;
 }
-
 .eyecatch{
-  color: #fff;
-  position:relative;
-
-}
-.eyecatch-img{
-  width: 100%;
-  margin: 0;
+  background: center/ cover no-repeat url("../img/872098_s.jpg");
+  height: 100vh;
+ position: relative;
 }
 .eyecatch p{
   position: absolute;
@@ -138,15 +140,17 @@ h1, p{
 .eyecatch h1{
   color: white;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 40px;
+  width: 300px;
   text-shadow:5px #000;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform:translate(-50%,-50%);
 }
 .header-menu{
   background-color: #e8e8e8;
+  position: relative;
   height: 50px;
   width: 100%;
   display: flex;
@@ -154,32 +158,39 @@ h1, p{
   align-items: center;
   margin-top: 0;
 }
-.header-menu p{
+.header-contents{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15%;
+}
+.header-contents p{
   font-family: monospace;
   font-size: 18px;
   color: #696969;
   letter-spacing: 8px;
-  padding-left: 200px;
+
 }
 .header-nav ul{
+  width: 100%;
   display: flex;
   font-size: 15px;
   list-style: none;
-  padding-right: 200px;
-
+  margin-left: 8%;
 }
 .header-nav ul li a{
   padding: 12px;
   text-decoration: none;
   color: #696969;
 }
-.concept{
-  padding-top: 60px;
-}
+
 .concept-content{
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 40px;
+  padding-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+  margin-bottom: 60px;
 }
 .concept-content h1{
   color: #000;
@@ -193,51 +204,59 @@ h1, p{
 }
 .information{
   background-color:#f8f8f8;
-  padding-top: 20px;
 }
 .info-content{
+  width: 60%;
   margin-top: 40px;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
   height: 300px;
+}
+.info-content hr{
+  margin-bottom: 0px;
 }
 .info{
   display: flex;
   border-bottom: 1px solid ;
-  border-collapse: collapse;
   border-width: 0.5px;
   border-color: #d3d3d3;
-  padding: 10px;
+  margin-top: 15px;
+  padding-bottom: 15px;
 }
-.info h1{
+.info div{
+  color: #696969;
   font-size: 15px;
   font-weight: 200;
   font-family: Arial;
   letter-spacing:1px;
 }
 .info p{
-  font-family: Arial Narrow;
-  font-weight: 100;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 200;
   letter-spacing:1px;
   padding-left: 2px ;
 }
 .things{
   display: flex;
-  width: 100%;
+  width: 100vw;
 }
 .thingscard{
   border: solid 0.5px;
   border-right: none;
-  width: 100%;
+  width: 25vw;
+  display: block;
   border-color: gray;
 }
 .card-img{
   width: 100%;
-  height: 100%;
-  height: 300px;
   position: relative;
   background-size:cover;
   background-repeat: no-repeat;
+}
+.card-img:before{
+  content:"";
+  display: block;
+  padding-top: 100%;
 }
 .thingsfood{
   background-image: url("../img/2615381_s.jpg");
@@ -254,7 +273,11 @@ h1, p{
 .thingsmake{
   background-image: url("../img/PAK13_inakanotanbo20130812_TP_V4.jpg");
 }
-
+.thingsbottom{
+  background-color: white;
+  position: relative;
+  height: 100px;
+}
 .icontext{
   color: white;
   font-size: 25px;
@@ -262,14 +285,6 @@ h1, p{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.thingsbottom{
-  background-color: white;
-  position: relative;
-  height: 100px;
-  border: solid 0.5px;
-  border-color: gray;
-  border-right: none;
 }
 .thingstitle{
   position: absolute;
@@ -290,35 +305,36 @@ h1, p{
   letter-spacing: 5px;
 }
 .calender{
-  position: relative;
   background-color:#f8f8f8;
    padding-top: 60px;
-   height: 700px;
-   padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 .calender img{
   width: 60%;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: 20%;
 }
 .news{
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 40px;
 }
 .news-buttons{
-  margin-top: 60px;
+  margin-top: 20px;
+  width: 40%;
+  margin-left: 30%;
   display: flex;
   justify-content: center;
 }
 .news-button{
-  padding: 15px 50px;
+  padding: 3% 10%;
   font-size: 10px;
   color: gray;
   background-color: #fff;
   border: solid 1px #696969;
   outline: none;
+}
+.news-button + .news-button {
+  border-left: none;
 }
 .news-button:hover{
   color: #d3d3d3;
@@ -332,11 +348,14 @@ h1, p{
 .cafe-news{
   display: flex;
   justify-content: space-around;
-  margin: 40px 250px 40px 250px;
+  margin-top: 30px;
+  width: 60%;
+  margin-left: 20%;
 }
 .cafe-menu{
   width: 250px;
   height: 400px;
+  padding: 15px;
 }
 .cafe-menu img{
   width: 250px;
@@ -377,24 +396,244 @@ h1, p{
 .event-report{
   padding-top: 40px;
   background-color: #f8f8f8;
+  padding-bottom: 60px;
 
 }
 .report{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-
+  width: 70%;
+  margin-left: 17%;
+  margin-top: 40px;
+}
+.event-report hr{
+  color: #696969;
+  margin: 20px;
+  width: 67%;
+  margin-left: 17%;
 }
 .contents{
-  width: 30%;
+  width: 45%;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  border-color: #cccccc;
+  margin-bottom: 20px;
+  margin-right: 5%;
 }
-.report th img{
+.report img{
   width: 80px;
   height: 80px;
   object-fit: cover;
 }
-.report td p{
+.report-detail{
+  margin-left: 20px;
+}
+.report-title{
+  margin-top: 10px;
+  font-family: Arial;
+  font-weight: 300;
+}
+.event-icon{
+  background-color: #4f4d4c;
+  width: 80px;
+  height: 10px;
+}
+.event-icon p{
+  font-family: arial;
+  color: white;
+  font-size: 10px;
+  font-weight: 100;
+}
+.report-detail date{
+  font-size: 10px;
+  color: #686868;
+  font-weight: 100;
+}
+.instagram{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.insta-content{
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 35%;
+  text-align: center;
+}
+.follow-us{
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 200;
+}
+.insta-content img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.insta-username{
+  font-family: Arial;
   font-size: 15px;
+  font-weight: 100;
+}
+.site-map{
+  padding-top: 40px;
+  background-color: #f8f8f8;
+}
+.footer-nav ul{
+ padding: 20px;
+}
+.footer-nav li a{
+  text-decoration: none;
+  color:#696969;
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer-nav li {
+  padding-bottom: 18px;
+}
+.footer-nav p{
+  font-size: 12px;
+  font-family: Arial;
+  margin: 0 0 20px 20px;
+}
+.online-store{
+  background-color:#564539;
+  width: 300px;
+  height: 100px;
+  position: relative;
+}
+.online-store p{
+  color: #fff;
+  font-family: monospace;
+  font-size: 18px;
+}
+.online-a{
+  position: absolute;
+  padding: 30px 100px;
+}
+.online-b{
+  position: absolute;
+  padding: 50px 100px;
+  width: 200px;
+
+}
+.footer{
+  padding: 40px;
+  color: white;
+  background-color: #4f4d4c;
+  text-align: center;
+}
+.footer-title{
+  color: white;
+  font-family: monospace;
+  font-size: 18px;
+  letter-spacing: 8px;
+  padding-bottom: 20px;
+}
+.footer small{
+  font-size: 12px;
 }
 
+@media screen and (max-width: 768px) {
+  .header-contents{
+    position: relative;
+  }
+  .header-contents p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  #hamburger {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  top: 5%;
+  right: 5%;
+  transition: 0.4s;
+}
+
+  #hamburger span {
+  position: absolute;
+  left: 2px;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.8s;
+}
+#hamburger span:nth-of-type(1) {
+  top: 10px;
+}
+
+#hamburger span:nth-of-type(2) {
+  top: 20px;
+}
+
+#hamburger span:nth-of-type(3) {
+  top: 30px; /* ハンバーガーメニューの3本目の棒 */
+}
+
+.header-nav {
+  display: none;
+}
+.concept-content{
+  width: 90%;
+  margin-left: 5%;
+}
+.info-content{
+  width: 90%;
+  margin-left: 5%;
+}
+.things{
+  display: block;
+  width: 100%;
+  border-bottom: 0.5px solid gray;
+}
+.thingscard{
+  display: flex;
+  width: 100%;
+  border-bottom: none;
+}
+
+.card-img{
+  width: 50%;
+}
+.thingsbottom{
+ width: 50%;
+}
+.thingsbottom:before{
+  content: "";
+  display: block;
+  padding: 50%;
+
+}
+.thingsbottom{
+  height: 100%;
+}
+.calender img{
+  width: 90%;
+  margin-left: 5%;
+}
+.news-buttons{
+ width: 60%;
+ margin-left: 20%;
+}
+.cafe-news{
+  overflow-x: scroll;
+  width: 100%;
+  margin-left: 0px;
+}
+.cafe-menu{
+  margin: auto 1% auto auto;
+  width: 100%;
+}
+.cafe-menu img{
+  width: 100%;
+}
+.contents{
+  width: 100%;
+}
+}
