@@ -621,6 +621,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+
   .header-contents {
     position: relative;
   }
@@ -665,6 +666,23 @@ p {
   .header-nav {
     display: none;
   }
+
+  .header-nav.is-hidden{
+   background:rgba(0,0,0,0.7);
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   display: block;
+   align-items: center;
+  justify-content: center;
+  }
+  .header-nav ul{
+    display: block;
+  }
+  .header-nav ul li a{
+    color: white;
+  }
+
   .concept-content {
     width: 90%;
     margin-left: 5%;
